@@ -36,6 +36,7 @@ def vectorize_data(df: pd.DataFrame, numerical: list[str] = ['duration'], catego
 
     if dv is not None:
         print(f"Using existing DictVectorizer")
+        df_features
         X_train = dv.transform(df_features)
     else:
         print(f"Creating new DictVectorizer")
